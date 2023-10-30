@@ -1,0 +1,19 @@
+{
+    "name": "isl/poo_boost_composer",
+    "description": "initialisation d'un projet avec composer via composer init",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Isl\\PooBoostComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "angelique KRAUSE",
+            "email": "krause_angelique@hotmail.com"
+        }
+    ],
+    "require": {
+        
+    }
+}
