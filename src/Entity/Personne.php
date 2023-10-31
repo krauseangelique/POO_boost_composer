@@ -3,7 +3,7 @@
 namespace Isl\PooBoostComposer\Entity;
 
 // class MERE
-class Personne
+abstract class Personne
 {
 
     protected $nom;
@@ -33,8 +33,8 @@ class Personne
         return $this->adress;
     }
 
-    // autres fonctions
-    public function habiteA(){
-        return "la  personne ".$this->nom. "habite à ". $this->adress ;
+    // autres fonctions Si c'est mit en protected dans la mère alors dans la fille ce ne sera plus accessible sauf si on SURCHARGE la méthode dans le fichier fille
+    protected function habiteA(){
+        return "la  personne ".$this->nom. " habite à ". $this->adress ;
     }
 }
